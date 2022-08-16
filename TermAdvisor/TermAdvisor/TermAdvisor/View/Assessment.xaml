@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TermAdvisor.View.Assessment">
+    <ContentPage.Content>
+        <StackLayout>
+        <ListView 
+                x:Name="assessmentListView" 
+                RowHeight="150"
+                SeparatorVisibility="None" 
+                ItemTapped="assessmentListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell IsEnabled="True">
+                        <Grid Padding="0">
+                                <Frame BackgroundColor="#1D2545" Margin="15" CornerRadius="10" HasShadow="True">
+                                    <StackLayout HorizontalOptions="Start" Padding="1">
+                                        <Label Text="{Binding Type}" VerticalOptions="Center" TextColor="#FFFFFF" FontSize="20"/>
+                                        <Label Text="{Binding Name}" VerticalOptions="Center" TextColor="#FFFFFF" FontSize="20"/>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout Orientation="Horizontal" Padding="0">
+                <Button Text="Add" x:Name="AddButton" Clicked="AddButton_Clicked" CornerRadius="10" Margin="5" HorizontalOptions="FillAndExpand" />
+                <Button Text="Cancel" x:Name="CancelButton" Clicked="CancelButton_Clicked" CornerRadius="10" Margin="5" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

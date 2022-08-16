@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TermAdvisor.NavigationPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Aspect="AspectFill"
+                  Source="logo.png"
+                  Opacity="1" 
+                  Margin="10"/>
+                <Frame BackgroundColor="#1D2545" CornerRadius="10" Margin="10">
+                    <Label Text="Term Advisor" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+                </Frame>
+            </StackLayout>
+            <ListView 
+                x:Name="termListView" 
+                RowHeight="100" 
+                SeparatorVisibility="None" 
+                ItemTapped="termListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell IsEnabled="True">
+                            <Grid Padding="10">
+                                <Frame BackgroundColor="#aa6c39" CornerRadius="10" HasShadow="True">
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5">
+                                        <Label Text="{Binding Name}" VerticalOptions="Center" TextColor="#FFFFFF" FontSize="20"/>
+                                        <Label Text="{Binding StartDate, StringFormat='{0:MMMM dd, yyyy}'}" VerticalOptions="Center" FontSize="15"/>
+                                        <Label Text="-" VerticalOptions="Center" FontSize="15"/>
+                                        <Label Text="{Binding EndDate, StringFormat='{0:MMMM dd, yyyy}'}" VerticalOptions="Center" FontSize="15"/>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Padding="50,0,50,10">
+                <Button Text="Add" x:Name="AddTerm" FontSize="20" CornerRadius="10" Clicked="AddTerm_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

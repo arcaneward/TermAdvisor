@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C4F54A1A-25DB-4E61-85B5-0D8FB20F8043}") = "TermAdvisor.Android", "TermAdvisor\TermAdvisor.Android\TermAdvisor.Android.csproj", "{25C00203-FE2B-4A89-9EB0-31B63BB52D65}"
+EndProject
+Project("{09D05A83-88D5-4CA2-AB1C-159DE3653F9D}") = "TermAdvisor", "TermAdvisor\TermAdvisor\TermAdvisor.csproj", "{C3C1A0B7-6671-408C-8D7A-385329A51AD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25C00203-FE2B-4A89-9EB0-31B63BB52D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C00203-FE2B-4A89-9EB0-31B63BB52D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C00203-FE2B-4A89-9EB0-31B63BB52D65}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{25C00203-FE2B-4A89-9EB0-31B63BB52D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C00203-FE2B-4A89-9EB0-31B63BB52D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C00203-FE2B-4A89-9EB0-31B63BB52D65}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C3C1A0B7-6671-408C-8D7A-385329A51AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C1A0B7-6671-408C-8D7A-385329A51AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C1A0B7-6671-408C-8D7A-385329A51AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C1A0B7-6671-408C-8D7A-385329A51AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41AB0CAB-2AC6-48E8-AE84-EC8EEA5B4146}
+	EndGlobalSection
+EndGlobal
