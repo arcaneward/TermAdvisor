@@ -69,9 +69,9 @@ namespace TermAdvisor.Services
                 StartDate = DateTime.Today,
                 EndDate = DateTime.Today.AddDays(+9),
                 Status = "In-Progress",
-                InstructorName = "Lindsey Thornton",
+                InstructorName = "Firstname Lastname",
                 InstructorPhone = "555-867-5309",
-                InstructorEmail = "lthor71@wgu.edu",
+                InstructorEmail = "email@school.edu",
                 Notes = "Enter notes here",
                 NotificationOn = true
             };
